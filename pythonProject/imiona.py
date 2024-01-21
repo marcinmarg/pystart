@@ -1,9 +1,12 @@
-names = ('Marta', 'Tymek', 'Stasiu', 'Rudi')
+notes = 4, 5, 6, 5, 6, 4
 
-first_name = input('Podaj imie: ')
+print('Oceny ucznia', sorted(notes))
 
-if first_name in names:
-    print('Jest w tupli')
+average = sum(notes) / len(notes)
+
+print(f'Srednia ocen {average:.2f}')
+
+if average >= 4.7:
+    print('MAsz swiadectow z paskiem')
 else:
-    print('Nie znam czlowieka')
-
+    print("Sprobuj za rok")
