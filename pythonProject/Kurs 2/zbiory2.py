@@ -1,0 +1,5 @@
+div_by_3 = set(range(3, 100, 3))
+div_by_5 = set(range(5, 100, 5))
+print(div_by_3)
+print(div_by_5)
+print(div_by_5 & div_by_3)
